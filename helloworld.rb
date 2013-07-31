@@ -8,9 +8,11 @@ while (choice.empty?) do
   puts "    1) Have a greeting."
   puts "    2) Reverse a string."
   puts "    3) Insert a name into the database."
+  puts "-----------------------------------------------"
+  print "Your choice (number): "
   choice = gets.chomp 
 end
-
+puts "\e[H\e[2J"
 if (choice == "1") then
   DefaultController.main
 elsif (choice == "2") then
